@@ -114,10 +114,18 @@ clear()
 mainLogo()
 print(Fore.YELLOW)
 
-amount = int(input("Amount of Streamable links to generate: "))
+amount = input("Amount of Streamable links to generate: ")
 
-for _ in range(amount):
-    generateCode()
+if amount.lower() != "inf":
+    try:
+        amount = int(amount)
+        for _ in range(amount):
+            generateCode()
+    except ValueError:
+        print("Please enter a valid number or 'inf' for infinite links.")
+else:
+    while True:
+        generateCode()
 
 print(Fore.YELLOW)
 print("             WORKING")
@@ -131,9 +139,9 @@ clear()
 
 endLogo()
 input()
+
 clear()
 workingFile.close()
-os.close()
 """
 def test_link(linky):
     try:
