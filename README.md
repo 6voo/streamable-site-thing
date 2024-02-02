@@ -16,7 +16,6 @@ git clone https://github.com/6voo/streamable-site-thing.git
 4. Run the script
 ```python main.py```
 
--
 
 just wait for a valid link and see what someone else uploaded 
 made using web scraping
