@@ -39,8 +39,6 @@ def mainLogo():
                         _.'~  . .,:oP'        ?88b              _..--- 88.--'8b.--..__
                         :     ...' 88o __,------.88o ...__..._.=~- .    `~~   `~~      ~-._ Seal _.
                         `.;;;:='    ~~            ~~~                ~-    -       -   -
-                                              PrivacyInvaderPro+    
-                                              (PLS DONT SUE ME)    
                                               @llumix on discord                                                                         
 """)
 
