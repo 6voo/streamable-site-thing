@@ -17,5 +17,5 @@ git clone https://github.com/6voo/streamable-site-thing.git
 ```python main.py```
 
 
-just wait for a valid link and see what someone else uploaded 
+just wait for a valid link and see what someone else uploaded.
 made using web scraping
