@@ -1,9 +1,6 @@
 import random
-import time
 import requests
 import string
-import re
-import os
 from bs4 import BeautifulSoup
 from colorama import Fore
 from os import system, name
@@ -56,8 +53,7 @@ def clear():
     # for windows
     if name == 'nt':
         _ = system('cls')
-
-    # for mac and linux(here, os.name is 'posix')
+    # for mac and linux
     else:
         _ = system('clear')
 
@@ -77,10 +73,9 @@ def checkForCt(url, content_tag, content_text):
             # print("Username unavailable")
             return False
         else:
-            # print("Username available")
             return True
     except requests.exceptions.RequestException as e:
-        # print(f"Error: {e}")
+        print(f"Error: {e}")
         return False
 
 def add_keyword(text, keyword):
@@ -90,8 +85,8 @@ def generateCode():
 
     password = []
     for i in range(6):
-        randomchar = random.choice(characterList)
-        password.append(randomchar)
+        random_char = random.choice(characterList)
+        password.append(random_char)
         code = ''.join(password)
         final_link = add_keyword(code, link)
         idk = checkForCt(final_link, ctTag, ctText)
